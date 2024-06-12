@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college website</title>
+    <script src="college.js" defer></script>
+    <link rel="stylesheet" href="./../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <img src="./../static/images/logopn.png"  alt="" height="70px" width="40px">
+        <div class="navigation">
+            <ul>
+                <li><a class="active" href="#"> Home  </a></li>
+                <li><a href="/about"> About  </a></li>
+                <li><a href="/blog"> Blog  </a></li>
+                <li><a href="/course"> Courses   </a></li>
+                <li><a href="/contact"> Contact us  </a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- home --> 
+    <section id="home">
+        <h2> Enhance your future with Code With NP</h2>
+        <h1>Grow your skills to advance your career path.</h1>
+        <div class="btn">
+        <a class="blue" href="/about"> Learn More</a><br/>
+        <a class="yellow" href="/course">Visit courses</a>
+    </div>
+    </section>
+    <section id="features">
+        <h1>Awesome features</h1><br/>
+        <p>"Everyone in this country should Learn how to program bcoz it teaches you to think"</p><br/>
+        
+        <div class="fea-base">
+
+             <div class="fea-box">
+                <i class="fa fa-graduation-cap" ></i>
+                <h3>Scholarship facility</h3>
+                <p>Lorem ipsum dolor sit  voluptates.</p>
+            </div>
+
+            <div class="fea-box">
+                <i class="fa fa-certificate" aria-hidden="true"></i>
+            <h3> online Course</h3>
+            <p>Loremraesentium, voluptates.</p>
+        </div>
+
+        <div class="fea-box">
+        <i class="fa fa-award"></i>
+        <h3>Scholarship facility</h3>
+        <p>Lorem  voluptates.</p>
+    </div>
+</div>
+    
+    </section>
+    <section id="course">
+        <h1>Our Popular courses</h1>
+        <p>Enhance your knowledge</p>
+        <div class="course-box">
+            <div class="courses">
+                <img src="./../static/images/c.png" >
+                <!-- height="300px" width="300px" -->
+            
+            <div class="details">
+                <span>Updated 22/9/22</span>
+                <h6>C-Programming beginners course</h6>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(121)</span>
+                </div>
+            </div>
+            <div class="cost">
+                $15.99
+            </div>
+        </div>
+
+        <div class="courses">
+            <img src="data:image/png;base64,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" >
+            <!-- height="300px" width="300px" -->
+        
+        <div class="details">
+            <span>Updated 22/9/22</span>
+            <h6>solidity beginners course</h6>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(121)</span>
+            </div>
+        </div>
+        <div class="cost">
+            $15.99
+        </div>
+    </div>
+
+    <div class="courses">
+        <img src="./../static/images/css.png" >
+        <!-- height="300px" width="300px" -->
+    
+    <div class="details">
+        <span>Updated 22/9/22</span>
+        <h6>CSS beginners course</h6>
+        <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(121)</span>
+        </div>
+    </div>
+    <div class="cost">
+        $15.99
+    </div>
+</div>
+
+<div class="courses">
+    <img src="./../static/images/c.png" >
+    <!-- height="300px" width="300px" -->
+
+<div class="details">
+    <span>Updated 22/9/22</span>
+    <h6>React beginners course</h6>
+    <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <span>(121)</span>
+    </div>
+</div>
+<div class="cost">
+    $15.99
+</div>
+</div>
+    <!-- </div> -->
+    <div class="courses">
+        <img src="./../static/images/js.jpg" >
+        <!-- height="300px" width="300px" -->
+    
+    <div class="details">
+        <span>Updated 22/9/22</span>
+        <h6>Javascript beginners course</h6>
+        <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(121)</span>
+        </div>
+    </div>
+    <div class="cost">
+        $15.99
+    </div>
+    </div>
+
+    <div class="courses">
+        <img src="./../static/images/sql.jpg" >
+        <!-- height="300px" width="300px" -->
+    
+    <div class="details">
+        <span>Updated 22/9/22</span>
+        <h6>SQL beginners course</h6>
+        <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(121)</span>
+        </div>
+    </div>
+    <div class="cost">
+        $15.99
+    </div>
+    </div>
+    </section>
+    <section id="registration">
+        <div class="remainder">
+            <h2>Get online course for <span>Free</span></h2>
+            <h1><span>Register</span> to get It</h1>
+            <div class="time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hrs">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="min">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p id="sec">00</p>
+                    <span>Second</span>
+                </div>
+            </div>
+            <!-- <div class="time">
+                <div class="date"> 23 hours</div>
+            </div>
+            <div class="time">
+                <div class="date"> 57 min </div>
+            </div>
+            <div class="time">
+                <div class="date"> 35 sec </div>
+            </div> -->
+        </div> 
+        <div class="form"> 
+            <h3>register for free</h3>
+            <form action="/" method="POST">
+                <!--   -->
+            <input type="text" placeholder="enter your name" name="name" required/>
+            <input type="email" placeholder="enter your email" name="email" required/>
+            <input type="password" placeholder="enter your password" name="password" id="" />
+            <div class="btn">
+                <button class="yellow" href="#"> Submit form</button><br/>
+                <!-- <button>submit form</button> -->
+               
+            </div>
+        </form>
+        </div>
+        
+    </section>
+    <section class="experts">
+        <h1>Community Experts</h1>
+        <p>Practise makes man perfect</p>
+        <div class="expert-box">
+            
+            <div class="profile">
+            <img src="./../static/images/expert1.jpg" alt="emma">
+            <h6> Emma walmert</h6>    
+            <p> JavaScript experts</p>
+            <div class="pro-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            </div>
+
+            <div class="profile">
+                <img src="./../static/images/expert2.jpg" alt="tom">
+                <h6> Anupam jha</h6>    
+                <p> solidity experts</p>
+                <div class="pro-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                </div>
+
+                <div class="profile">
+                    <img src="./../static/images/expert3.jpg" alt="emma">
+                    <h6> bella grover</h6>    
+                    <p> React experts</p>
+                    <div class="pro-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    </div>
+
+                    <div class="profile">
+                        <img src="./../static/images/expert4.jpg" alt="tom">
+                        <h6> elon holland</h6>    
+                        <p> c programming experts</p>
+                        <div class="pro-links">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        </div>
+        </div>
+    </section>
+    <footer>
+  <div class="footer-col">
+    <h3>Our Products</h3>
+    <li>Managed website</li>
+    <li>easy code</li>
+    <li>Trustable code</li>
+    <li>Marketing service</li>
+</div>
+<div class="footer-col">
+    <h3>Quick links</h3>
+    <li>Jobs</li>
+    <li>Brand</li>
+    <li>Invester Relationship</li>
+    <li>good service</li>
+</div>
+<div class="footer-col">
+    <h3>Features</h3>
+    <li>Managed website</li>
+    <li>easy code</li>
+    <li>Trustable code</li>
+    <li>Marketing service</li>
+</div>
+<div class="footer-col">
+    <h3>Resourse</h3>
+    <li>Guide</li>
+    <li>Research</li>
+    <li>Experts</li>
+    <li>Marketing service</li>
+</div>
+<div class="footer-col">
+    <h3> Newsletter</h3>
+    <p>You can trust us. We only send promo offer</p>
+    <div class="subscribe">
+        <input type="text" placeholder="Your Email Addresss" />
+        <a href="#" class="yellow">SUBSCRIBE</a>
+    </div>
+</div>
+<div class="copyright"></div>
+<marquee height="200" direction="right"> copyright @2022 All rights reserved | this template is made by Khatal Nikita and Khatode pallavi </marquee>
+<div class="pro-links">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+</div>
+    </footer>
+    <img src="./../static/images/rocket.png" class="i"/>
+    <script>
+        var countdowndate= new Date("feb 6,2023 00:00:00").getTime();
+var x=setInterval(function () {
+    var now=new Date().getTime();
+    var distance=countdowndate - now;
+    var days=Math.floor(distance/(1000*60*60*24));
+    var hrs=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+    var min=Math.floor((distance%(1000*60*60))/(1000*60));
+    var sec=Math.floor((distance%(1000*60))/1000);
+    document.getElementById("days").innerHTML=days;
+    document.getElementById("hrs").innerHTML=hrs;
+    document.getElementById("min").innerHTML=min;
+    document.getElementById("sec").innerHTML=sec;
+    // document.getElementsByTagName("time").innerHTML=days
+}, 1000);
+    </script>
+</body>
+</html>

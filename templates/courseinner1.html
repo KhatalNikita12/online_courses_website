@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college website</title>
+    <link rel="stylesheet" href="./../static/css/style.css">
+    <script src="./../static/js/college.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav>
+        <img src="./../static/images/logopn.png" alt="" height="70px" width="40px">
+        <div class="navigation">
+            <ul>
+                <li><a href="/"> Home </a></li>
+                <li><a href="/about"> About </a></li>
+                <li><a href="/blog"> Blog </a></li>
+                <li><a class="active" href="/course"> Courses </a></li>
+                <li><a href="/contact"> Contact us </a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- home -->
+    <section id="About-home">
+        <h2> Enhance Our Popular Courses And Skill Up</h2>
+    </section>
+
+    <section id="course-inner">
+        <div class="overview">
+            <img height="400" width="400" class="course-img"
+                src="data:image/png;base64,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" />
+            <div class="course-head">
+                <div class="c-name">
+                    <h2>solidity beginners course</h2>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+                    <p>Solidity from the begginning. All the way up to c experts level! The must-have Solidity resourse
+                        in 2022.</p><br />
+                </div><br />
+                <!-- <span>$49.99 </span> -->
+            </div>
+            <h3> Insructor</h3><br />
+            <div class="tutor">
+                <img height="70" width="70" src="./../static/images/aa.jpeg" />
+                <div class="tutor-dtl">
+                    <h5> Natasha musk</h5>
+                    <p> Blockchain developer At Wipro</p>
+                </div>
+            </div>
+            <!-- <hr/> -->
+            <br /><br />
+            <hr />
+            <h3> Course Overview</h3>
+            <hr /><br /><br />
+            <p>
+            <h2>What is Solidity ?</h2><br />
+            Smart contracts are written in a language called Solidity. Solidity is a high-level, object-oriented
+            language that can be used to construct smart contracts. Programs known as smart contracts control how
+            accounts behave within the Ethereum state. The curly-bracket language Solidity is intended to work with the
+            Ethereum Virtual Machine.
+            Solidity is statically typed, supports inheritance, libraries and complex user-defined types among other
+            features.
+
+            With Solidity you can create contracts for uses such as voting, crowdfunding, blind auctions, and
+            multi-signature wallets.
+            </p><br />
+            <hr /><br /><br />
+            <h3>What you`ll learn</h3>
+            <div class="learn">
+                <p><i class="far fa-check-circle"></i>Solidity from scratch-beginner to advanced</p>
+                <p><i class="far fa-check-circle"></i>Everything You Need To Become a Solidity Expert</p>
+                <p><i class="far fa-check-circle"></i>All about keywords,functions,Smart Contract</p>
+                <p><i class="far fa-check-circle"></i>Projects</p>
+                <p><i class="far fa-check-circle"></i>Handwritten Notes</p>
+                <p><i class="far fa-check-circle">
+
+                    </i>Solidity from scratch-beginner to advanced</p>
+            </div>
+
+        </div>
+        <div class="enroll">
+            <h3> This Course includes:</h3><br />
+            <p><i class="fa-solid fa-video"></i> videos</p><br />
+            <p><i class="fa-solid fa-newspaper"></i> Articles</p><br />
+            <p><i class="fa-solid fa-cloud-arrow-down"></i> Downloadable resoures</p><br />
+            <p><i class="fa-solid fa-infinity"></i> Full lifeline access </p><br />
+            <p><i class="fa-solid fa-mobile"></i> Access on mobile </p><br />
+            <p><i class="fa-solid fa-paperclip"></i> Assignment</p><br />
+            <p><i class="fa-solid fa-trophy"></i> Certificate of completion</p><br />
+            <div class="enroll-btn">
+                <a class="blue" href="#"> Enroll Courses</a>
+            </div>
+        </div>
+    </section>
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq open">
+                <div class="faq__icon"><i class="fa fa-certificate" aria-hidden="true"></i></div>
+                <div class="question_answer">
+                    <h4>Solidity Installation</h4>
+                    <hr />
+                    <P>
+                        <strong>1) Using an open source in-browser IDE called as Remix -</strong>
+                        <br><br>You may access Remix online without installing anything. If you wish to utilize it
+                        offline, go to — https://github.com/ethereum/remix-live/tree/gh-pages and download the .zip
+                        file. There is No need to install several Solidity versions while using Remix.
+                        <br><br>
+                        <strong>2) Using NPM/Node.js -</strong>
+                        <br><br>Installing Solc-js, a Solidity compiler, is easy and portable using NPM. Solc-js gives
+                        Solidity compiler Javascript bindings.
+                        The solc-js project uses the same compiler source code as the C++ solc project. Solc-js is
+                        directly usable in JavaScript (such as Remix).
+
+                    </P>
+                </div>
+            </article>
+
+            <article class="faq ">
+                <div class="faq__icon"><i class="fa fa-certificate" aria-hidden="true"></i></div>
+                <div class="question_answer">
+                    <h4>What are the most used IDE for Solidity?</h4>
+                    <hr />
+                    <P>
+                        An integrated developer environment (IDE) is a single application that enables developers to
+                        write, edit, execute, and debug code.<br><br>
+                        <strong>1.Remix-</strong>
+                        Remix is an open-source, online IDE for Solidity development on Ethereum or EVM-compatible
+                        blockchains. Remix is popular because users can get started without any prior setup, and it
+                        supports an entire software development lifecycle.
+                    </P>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa fa-certificate" aria-hidden="true"></i></div>
+                <div class="question_answer">
+                    <h4>Structure of a Smart Contract?</h4>
+                    <hr />
+                    <P>
+                        Solidity contracts are like classes in modern Object Oriented Programming languages. State
+                        variables ,Functions, Function Modifiers, Events, Errors, Struct and Enum Types may all be
+                        declared in a contract. Contracts may also inherit from other contracts.
+                        <br /><br />
+                        <strong>
+                            A contract contains multiple constructs::</strong><br />
+                        ● State variables<br />
+                        ● Structures<br />
+                        ● Modifiers<br />
+                        ● Declaratives<br />
+                        ● Enumerations<br />
+                        ● Functions
+                        <br><br>
+                        <strong>Solidity Data Types</strong><br>
+                        ● Value Types<br>
+                        ● Reference Types<br>
+                        ● Mapping Types<br>
+                        ● Operators<br><br>
+
+                    </P>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa fa-certificate" aria-hidden="true"></i></div>
+                <div class="question_answer">
+                    <h4>solidity program to print "hello World"</h4>
+                    <hr />
+                    <P>
+                        // SPDX-License-Identifier: MIT<br>
+                        pragma solidity ^0.8.0;<br>
+
+                        contract HelloWorld {<br>
+                        string public greet = "Hello World";<br>
+                        }<br>
+
+                    </P>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa fa-certificate" aria-hidden="true"></i></div>
+                <div class="question_answer">
+                    <h4>what is Ether Units:?</h4>
+                    <hr />
+                    <P>
+                        Ether is the name of the currency that is used in the Ethereum blockchain. It is used to pay for
+                        work done in the EVM. A way to do this is to buy gas for ether. This is done as explained in the
+                        gas section.<br><br>
+
+
+                        Transactions are paid with ether.Similar to how one rupess is equal to 100 paisa, one ether is
+                        equal to 10^18 wei.<br>
+
+
+                    </P>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="fa fa-certificate" aria-hidden="true"></i></div>
+                <div class="question_answer">
+                    <h4>Which are the cryptographic function that can be used to protect data</h4>
+                    <hr />
+                    <P>
+                     <strong>sha256 (bytes memory) returns (bytes32) - </strong>Computes the SHA-256 hash of the input using the sha256(bytes memory) returns (bytes32) function
+                    </P>
+                </div>
+            </article>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-col">
+            <h3>Our Products</h3>
+            <li>Managed website</li>
+            <li>easy code</li>
+            <li>Trustable code</li>
+            <li>Marketing service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick links</h3>
+            <li>Jobs</li>
+            <li>Brand</li>
+            <li>Invester Relationship</li>
+            <li>good service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Managed website</li>
+            <li>easy code</li>
+            <li>Trustable code</li>
+            <li>Marketing service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resourse</h3>
+            <li>Guide</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing service</li>
+        </div>
+        <div class="footer-col">
+            <h3> Newsletter</h3>
+            <p>You can trust us. We only send promo offer</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Addresss" />
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+        <div class="copyright"></div>
+        <marquee height="200" direction="right"> copyright @2022 All rights reserved | this template is made by Khatal
+            Nikita and Khatode pallavi </marquee>
+        <div class="pro-links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </footer>
+    <img src="./../static/images/rocket.png" class="i" />
+
+    <script>
+// $('menu-btn').click(function(){
+//     $('nav.navigation ul').addClass('active')
+// });
+// $('menu-btn').click(function(){
+//     $('nav.navigation ul').removeClass('active')
+// });
+
+    </script>
+</body>
+
+</html>
